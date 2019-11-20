@@ -6,6 +6,7 @@
 .header {
     background: #000;
     color: #ddd;
+    height: 100vh;
 }
 
 .header__nav {
@@ -157,24 +158,8 @@
     animation-delay: 3.5s;
 }
 
-.scroll-down {
-    font-size: 2.5rem;
-    display: block;
-    font-weight: bolder;
-    text-align: center;
-}
-
-.header__scrolldown-button {
-    color: #ddd;
-}
-
 html {
     scroll-behavior: smooth;
-}
-
-.header__scrolldown-button:hover {
-    text-decoration: none;
-    color: #ddd;
 }
 
 .header__section-description {
@@ -205,6 +190,42 @@ html {
     }
 }
 
-.scroll-down:hover {
-    cursor: pointer;
+.box {
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.box .header__section__scroll {
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom: 1px solid #fff;
+    border-right: 1px solid #fff;
+    transform: rotate(45deg);
+    margin: -10px;
+    animation: scrol 2s infinite;
+}
+
+.box .header__scrolldown-button .header__section__scroll:nth-child(2) {
+    animation-delay: -0.2s;
+}
+
+.box .header__scrolldown-button .header__section__scroll:nth-child(3) {
+    animation-delay: -0.4s;
+}
+
+@keyframes scrol {
+    0% {
+        opacity: 0;
+        transform: rotate(45deg) translate(-20px, -20px);
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+        transform: rotate(45deg) translate(20px, 20px);
+    }
 }
