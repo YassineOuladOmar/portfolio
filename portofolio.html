@@ -63,24 +63,60 @@
             <span class="header__section__scroll"></span></a>
         </div>
     </header>
-    <main>
+    <main class="main__background">
         <section id="about">
-            <div class="col-md-9">
-                <h1 class="main__h1">About</h1>
-                <p class="main__p">What is Lorem Ipsum? Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it
-                    to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem
-                    Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. Where does it come from? Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in
-                    a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem
-                    Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil)
-                    by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32. The standard chunk
-                    of Lorem Ipsum used since the 1500s is reproduced below for those interested. Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in their exact original form, accompanied by English versions
-                    from the 1914 translation by H. Rackham.</p>
+            <div class="main__wrapper">
+                <div class="main__section-container">
+                    <h1 class="main__title">About me</h1>
+                    <div>
+                        <h6 class="main__text-h6">When you learn, teach, when you get, give.</h6>
+                    </div>
+                    <div>
+                        <p class="main__section-text">Hello my name is Yassine. A Full-Stack Developer in progress. Born and living in Amsterdam the Netherlands! My hobby's are soccer watching good movies/series and travelling! I like great designs. "Good design is obvious. Great
+                            design is transparent." And every great design begins with an even better story. Don't ask me where i've got these quotes from.</p>
+                    </div>
+
+                </div>
+                <div class="main__image-container">
+                    <img class="main__image1" src="img/_MG_9519.jpg" alt="">
+                    <div>
+                        <i class="lni-github-original"></i>
+                        <i class="lni-linkedin-original"></i>
+                        <i class="lni-facebook-original"></i>
+                        <i class="lni-instagram-original"></i>
+                        <i class="lni-envelope"></i>
+                    </div>
+                </div>
             </div>
-            <div class="main__image col-md-3">
-                <img src="" alt=""></div>
+        </section>
+        <section id="cv">
+            <div class="">
+                <h1 class=""></h1>
+                <p class=""></p>
+            </div>
+            <div class="main__button-wrapper"><button class="main__button-cv">Download my CV</button></div>
+            <div class="contact-map mt-5">
+                <div class="contact-map--container" id="map"></div>
+            </div>
+            <div class="main__image">
         </section>
     </main>
 
+    <footer>
+        <section id="footer">
+            <div class="footer__contact">
+                <h1 class="footer__contact-h1">Contact</h1>
+                <input type="text" class="name" placeholder="Your Name">
+                <input type="email" class="email" placeholder="Your Email">
+                <textarea rows="1" placeholder="Message" class="message"></textarea>
+                <button class="footer__button">Get in touch</button>
+            </div>
+        </section>
+    </footer>
+
+    <!-- Map -->
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD79MY72taVRlZVX2DU6L5PXOh3ezUUKMc&amp;callback=initMap" async="" defer=""></script>
 
 
 </body>
