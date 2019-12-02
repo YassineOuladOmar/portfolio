@@ -321,11 +321,11 @@ h6 {
 
 .main__section-title {
   font-size: 3rem;
-  font-family: 'Pacifico', cursive;
+  font-family: 'inconsolata', monospace;
   color: #fff;
   text-align: center;
   height: 5.1rem;
-  text-shadow: 0 0 20px #70a1ff;
+  text-shadow: 0 0 20px #fff;
   -webkit-transform: rotate(-90deg);
           transform: rotate(-90deg);
 }
@@ -344,7 +344,9 @@ h6 {
   color: black;
   border: solid 1px black;
   width: 300px;
-  height: 12rem;
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  cursor: pointer;
 }
 
 .main__section-icons {
@@ -365,9 +367,19 @@ h6 {
           justify-content: center;
 }
 
+.main__section-hobbies {
+  width: 0;
+  overflow: hidden;
+  list-style: none;
+  -webkit-transition: 2s;
+  transition: 2s;
+  color: black;
+}
+
 .main__section-text {
   color: #fff;
-  font-family: sans-serif;
+  font-family: 'barlow condensed', sans-serif;
+  font-size: 1.43rem;
   text-align: center;
   border: solid 1px black;
   width: 300px;
@@ -421,19 +433,6 @@ h6 {
   border: 1px solid black;
 }
 
-.lni-envelope {
-  margin-left: 1rem;
-  color: darkgrey;
-  font-size: 1.5rem;
-}
-
-.lni-envelope:hover {
-  cursor: pointer;
-  -webkit-transition: ease-in-out all 1s;
-  transition: ease-in-out all 1s;
-  font-size: 2rem;
-}
-
 .lni-instagram-original {
   margin-left: 1rem;
   color: darkgrey;
@@ -449,7 +448,6 @@ h6 {
 
 .lni-facebook-original {
   margin-left: 1rem;
-  color: darkblue;
   font-size: 1.5rem;
 }
 
@@ -462,24 +460,10 @@ h6 {
 
 .lni-linkedin-original {
   margin-left: 1rem;
-  color: blue;
   font-size: 1.5rem;
 }
 
 .lni-linkedin-original:hover {
-  cursor: pointer;
-  -webkit-transition: ease-in-out all 1s;
-  transition: ease-in-out all 1s;
-  font-size: 2rem;
-}
-
-.lni-github-original {
-  margin-left: 1rem;
-  color: darkgrey;
-  font-size: 1.5rem;
-}
-
-.lni-github-original:hover {
   cursor: pointer;
   -webkit-transition: ease-in-out all 1s;
   transition: ease-in-out all 1s;
@@ -498,8 +482,8 @@ h6 {
 
 .main__button-cv {
   background: none;
-  color: #70a1ff;
-  border: 1px solid #70a1ff;
+  color: #000;
+  border: 1px solid #000;
   padding: 12px 40px;
   border-radius: 8px;
   text-transform: uppercase;
@@ -512,7 +496,7 @@ h6 {
 }
 
 .main__button-cv:hover {
-  background: #70a1ff;
+  background: #000;
   color: #fff;
 }
 
@@ -522,14 +506,14 @@ h6 {
 }
 
 .footer__contact {
-  background: #313840;
+  background: #000;
   padding: 80px 0;
   text-align: center;
 }
 
 .footer__contact-h1 {
   font-size: 20px;
-  color: #888;
+  color: #fff;
   margin-bottom: 40px;
   text-transform: uppercase;
   letter-spacing: 4px;
@@ -543,7 +527,7 @@ h6 {
   border: none;
   outline: none;
   border-bottom: 1px solid;
-  color: #888;
+  color: #fff;
   padding: 10px 6px;
   font-size: 14px;
   margin-bottom: 40px;
@@ -563,10 +547,58 @@ h6 {
   max-width: 70%;
 }
 
+.name::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.name:-ms-input-placeholder {
+  color: #fff;
+}
+
+.name::-ms-input-placeholder {
+  color: #fff;
+}
+
+.name::placeholder {
+  color: #fff;
+}
+
+.email::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.email:-ms-input-placeholder {
+  color: #fff;
+}
+
+.email::-ms-input-placeholder {
+  color: #fff;
+}
+
+.email::placeholder {
+  color: #fff;
+}
+
+.message::-webkit-input-placeholder {
+  color: #fff;
+}
+
+.message:-ms-input-placeholder {
+  color: #fff;
+}
+
+.message::-ms-input-placeholder {
+  color: #fff;
+}
+
+.message::placeholder {
+  color: #fff;
+}
+
 .footer__button {
   background: none;
-  color: #70a1ff;
-  border: 1px solid #70a1ff;
+  color: #fff;
+  border: 1px solid #fff;
   padding: 12px 40px;
   border-radius: 8px;
   text-transform: uppercase;
@@ -579,8 +611,8 @@ h6 {
 }
 
 .footer__button:hover {
-  background: #70a1ff;
-  color: #fff;
+  background: #fff;
+  color: #000;
 }
 
 @media screen and (max-width: 600px) {

@@ -4,7 +4,7 @@
 function initMap() {
     // Styles a map in night mode.
     var map = new google.maps.Map(document.getElementById("map"), {
-        center: { lat: 52.3519889, lng: 4.7965372, },
+        center: { lat: 52.3547071, lng: 4.623782, },
         zoom: 15,
         styles: [
             { elementType: "geometry", stylers: [{ color: "#242f3e" }] },
@@ -89,7 +89,7 @@ function initMap() {
     });
 
     var marker = new google.maps.Marker({
-        position: { lat: 52.3519889, lng: 4.7965372, },
+        position: { lat: 52.3547071, lng: 4.623782, },
         map: map,
         title: "Amsterdam"
     });
